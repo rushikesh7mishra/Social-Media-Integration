@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <meta name="google-signin-client_id" content="565842303965-cufu0nngiiq40t0rgdmav1bcnv9f1qts.apps.googleusercontent.com">
+   
+    <title>Login</title>
+
+    <link rel="stylesheet" href="sparks.css">
+  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+   
+    
+</head>
+<body>
+  
+  
+
+<div  id="bo"> 
+        <div id="flex">
+                <div class="left"></div>
+                <div class="right">
+                    <form id="loggin">
+                    
+                    <table id="tab">
+                        
+                        <tr>
+                        <th>
+                            <span class="material-icons">person</span>
+                        </th>
+                        <th>
+                        <input id="name" type="text" placeholder="Username">
+                        </th> 
+                        </tr>
+                        <tr>
+                        <th>
+                        <span class="material-icons">lock</span>
+                            
+                        </th>
+                        <th>
+                        <input id="pass" type="password" placeholder="Password">
+                        </th>
+                        </tr>
+                        
+                    </table>
+                    <center>
+                    <button class="log" style="margin:40px;">Login</button>
+                    <hr>
+                <h2 style="margin:15px;font-family: 'Merienda', cursive;">Or</h2>
+
+                <div id="my-signin2" style="margin:10px;"></div>
+
+                <fb:login-button id="loginBtn" scope="public_profile,email" width="120" size="large" button-type="login_with" layout="default" continue-as="true" onlogin="checkLoginState();">
+                </fb:login-button>
+                    
+            </center>
+            </form>
+            
+            </div>
+        </div>
+            
+
+        <div id="hid">
+        <center>
+            <div id="content">
+            <div id="box1"></div>
+            <div id="box2"></div>
+            <div id="box3"></div>
+            <div id="box">
+                <img id="user" height="180px" width="180px">
+                <h1 id="uname">
+                Username 
+                </h1>
+                <h2 id="mail">
+                User@gmail.com 
+                </h2>
+                <button id="gout" class="log"><a  href="sparks.html" onclick()="signOut()">Sign Out</a></button>
+                <button id="fout" class="log"><a  onclick()="logout()" href="sparks.html">Log Out</a></button>
+                    
+            </div>
+            </div>
+        </center>
+        </div>
+    
+  </div>      
+
+  <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v11.0" nonce="ypyne179"></script>
+  <script src="google.js"></script>
+  <script src="facebook.js"></script>
+
+</body>
+</html>

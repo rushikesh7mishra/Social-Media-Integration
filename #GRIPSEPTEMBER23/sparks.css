@@ -1,0 +1,292 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+body{
+    height:100vh;
+    width:100%;
+    position:relative;
+    overflow:hidden;
+    
+}
+
+#bo{
+    
+    color:rgb(8, 6, 6);
+    background-color: rgb(255, 255, 255);
+   display: inline-flex;
+    height:100vh;
+    width:200%;
+    
+    overflow:hidden;
+    position:relative;
+    
+    -webkit-animation-name: slider;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: 1;
+    animation-play-state: paused;
+
+
+    -webkit-animation-delay: 2s;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-timing-function: ease-in-out;
+
+}
+
+
+
+
+@-webkit-keyframes slider
+{
+
+0%{
+    right:0%;
+}
+100%{
+    right:100%;
+    
+    
+}
+
+}
+
+
+
+    
+
+
+#flex{
+    
+    width: 100%;
+    height:100vh;
+    
+    display:inline-flex;
+    
+}
+
+
+.left{
+    background-image: url(pics/LOGGO.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width:60vw;
+    height:100vh;
+    margin-top:80px;
+    
+    
+    
+}
+
+
+.right{
+    width:27vw;
+    height:70vh;   
+    margin-top:120px;
+    margin-left:50px;
+    padding:70px 30px 0px 30px;
+   border-radius:10px;
+   box-shadow:0 2px 4px 0 rgb(0 0 0 / 25%);
+   transition: transform 300ms;;
+   
+}
+.right:hover{
+    box-shadow:0px 0px 10px 2px #acafb1;
+    transform:translateY(-7px);
+}
+
+
+#tab .material-icons{
+    font-size: 45px; 
+}
+
+#tab input{
+    text-decoration: none;
+    font-size:20px;
+    width:18vw;
+    height: 6vh;
+    border-radius: 10px 5px;
+    background-color: rgba(126, 119, 119, 0.301);
+    border:none;
+    font-family: 'Merienda', cursive;
+
+    
+}
+
+#tab input:hover{
+    border:2px solid #f44d5a;
+}
+
+
+input[placeholder]{
+    text-align:center;
+}
+.log{
+    
+    text-decoration: none;
+    font-size:20px;
+    width:7vw;
+    height: 6vh;
+    border-radius: 10px 5px;
+    background-color:#f44d5a;
+    border:none;
+    margin:10px;
+    font-weight: bold;
+    color:#181c20;
+    font-family: 'Merienda', cursive;
+    
+    
+}
+.log a{
+    text-decoration: none;
+    color:black;
+    
+}
+
+.log:hover{
+    box-shadow:0px 0px 8px 5px #796f6f;
+    width:7.3vw;
+    
+}
+
+.right hr{
+  width:22vw;
+   
+}
+
+#my-signin2:hover{
+    opacity:0.8;
+}
+
+#loginBtn:hover{
+ opacity:0.8;
+}
+
+
+
+
+#hid{
+    font-family: 'Merienda', cursive;
+    width: 100%;
+    position: relative;
+    height:100vh;
+    display:inline-block;
+    
+    background-image: url(pics/l2.png);
+    background-size: 600px 600px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+
+    
+
+}
+
+#content{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: 1;
+    animation-play-state: paused;
+
+    opacity:0;
+    -webkit-animation-delay: 4s;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-timing-function: ease-in-out;
+
+    
+}
+
+@keyframes animate{
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}
+
+@keyframes fade{
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
+}
+
+
+#box{
+    background:transparent;
+    position:absolute;
+    width:500px;
+    height:500px;
+    left:700px;
+    top:50px;
+    display: inline-block;
+    padding:60px;
+    border-radius: 50%;
+    
+   }
+
+   #box1{
+    background:transparent;
+    position:absolute;
+    width:35vw;
+    height:75vh;
+    left:700px;
+    top:50px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius:38% 52% 53% 37%/ 41% 44% 56% 39%;
+    /*box-shadow:2px 4px 4px 1px #f44d5a;*/
+    animation:animate 3s linear infinite;
+    border:3px solid #f44d5a;
+   }
+   #box2{
+    background:transparent;
+    position:absolute;
+    width:35vw;
+    height:75vh;
+    left:700px;
+    top:50px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius:28% 62% 53% 47%/ 41% 44% 56% 59%;
+    /*box-shadow:4px 0 4px 0 #181c20;*/
+    animation:animate 6s linear infinite;
+    animation-direction: alternate;
+    border:3px solid #181c20;
+   }
+   #box3{
+    background:transparent;
+    position:absolute;
+    width:35vw;
+    height:75vh;
+    left:700px;
+    top:50px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius:38% 42% 73% 47%/ 41% 44% 56% 49%;
+    /*box-shadow:4px 0 4px 0 #181c20;*/
+    animation:animate 9s linear infinite;
+    border:3px solid #796f6f;
+   }
+
+#uname,#mail{
+
+    visibility: visible;
+    margin:10px;
+}
+
+
+    #user{
+    
+    visibility: visible;
+    background-position: center;
+    border-radius: 50%;
+    }
+
+#fout,#gout{
+    display:none;
+    margin-top:35px;
+}
